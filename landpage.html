@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Econorte - Tecnología IoT para la Preservación Ambiental</title>
+    <meta
+      name="description"
+      content="Econorte es una plataforma IoT comprometida con la preservación de áreas verdes. Monitorizamos y optimizamos recursos para un futuro sostenible."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header/Navigation -->
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <!-- Added icon to logo -->
+          <div class="logo">
+            <svg
+              class="logo-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 2L2 7L12 12L22 7L12 2Z"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M2 17L12 22L22 17"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M2 12L12 17L22 12"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            Econorte
+          </div>
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#como-funciona">Cómo Funciona</a></li>
+            <li><a href="#lsm-arena">LSM Arena</a></li>
+            <li>
+              <a href="/dashboard" class="btn-primary">Ir al Dashboard</a>
+            </li>
+          </ul>
+          <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <!-- Added icon decoration -->
+        <div class="hero-icon-wrapper">
+          <svg
+            class="hero-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              fill="currentColor"
+              fill-opacity="0.2"
+            />
+            <circle
+              cx="12"
+              cy="9"
+              r="2.5"
+              stroke="currentColor"
+              stroke-width="2"
+            />
+          </svg>
+        </div>
+        <h1 class="hero-title">Tecnología verde para un futuro sostenible</h1>
+        <p class="hero-subtitle">
+          Econorte (Norte Ecológico) es una empresa dedicada a la detección
+          temprana, monitoreo y prevención de incendios forestales, apoyándose
+          en tecnologías IoT y plataformas de acceso universal.
+        </p>
+        <div class="hero-buttons">
+          <a href="/dashboard" class="btn-primary btn-large"
+            >Acceder al Dashboard</a
+          >
+          <a href="#como-funciona" class="btn-secondary btn-large"
+            >Conocer más</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Nosotros Section -->
+    <section class="about" id="nosotros">
+      <div class="container">
+        <div class="section-header">
+          <h2>Nuestra Filosofía</h2>
+        </div>
+
+        <div class="mission-vision-grid">
+          <!-- Added icons to cards -->
+          <div class="card">
+            <div class="card-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 2L2 7L12 12L22 7L12 2Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M2 17L12 22L22 17"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M2 12L12 17L22 12"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="card-number">01</div>
+            <h3 class="card-title">Misión</h3>
+            <p class="card-description">
+              Proteger los ecosistemas del norte del país mediante soluciones
+              tecnológicas accesibles, confiables y autónomas, que permitan
+              detectar riesgos ambientales en tiempo real y facilitar una
+              respuesta temprana para la conservación de la naturaleza y la
+              seguridad de las comunidades.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path
+                  d="M12 6V12L16 14"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <div class="card-number">02</div>
+            <h3 class="card-title">Visión</h3>
+            <p class="card-description">
+              Convertirnos en la red de monitoreo ambiental inteligente más
+              confiable de Latinoamérica, integrando dispositivos IoT,
+              plataformas inclusivas y herramientas educativas que empoderen a
+              las personas y contribuyan a un futuro sostenible.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cómo Funciona Section -->
+    <section class="how-it-works" id="como-funciona">
+      <div class="container">
+        <div class="section-header">
+          <h2>Innovación en cada conexión</h2>
+          <p class="section-subtitle">
+            Econorte integra sensores IoT con análisis avanzado para el
+            monitoreo ambiental y la gestión inteligente de áreas verdes
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Added icons to feature cards -->
+          <div class="feature-card">
+            <div class="feature-image">
+              <img
+                src="/img/Arduino.jpg?height=300&width=400"
+                alt="Dispositivos IoT conectados"
+              />
+            </div>
+            <div class="feature-content">
+              <div class="feature-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="2"
+                    y="2"
+                    width="20"
+                    height="20"
+                    rx="2"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  />
+                  <circle cx="7" cy="7" r="2" fill="currentColor" />
+                  <circle cx="17" cy="7" r="2" fill="currentColor" />
+                  <circle cx="7" cy="17" r="2" fill="currentColor" />
+                  <circle cx="17" cy="17" r="2" fill="currentColor" />
+                  <path
+                    d="M7 9V15M9 7H15M17 9V15M9 17H15"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  />
+                </svg>
+              </div>
+              <h3>1. Conecta tus dispositivos</h3>
+              <p>
+                El dispositivo IoT de Econorte es un equipo autónomo diseñado
+                para detectar riesgos ambientales en tiempo real, especialmente
+                incendios forestales. Está construido sobre tecnología Arduino e
+                integra sensores de gases, flama y actividad sísmica, lo que le
+                permite identificar señales tempranas de peligro antes de que se
+                conviertan en una amenaza mayor.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-card reverse">
+            <div class="feature-image">
+              <img
+                src="/img/dashboard.webp?height=300&width=400"
+                alt="Dashboard en tiempo real"
+              />
+            </div>
+            <div class="feature-content">
+              <div class="feature-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3 3V21H21"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7 16L11 12L15 16L21 10"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <circle cx="7" cy="16" r="1.5" fill="currentColor" />
+                  <circle cx="11" cy="12" r="1.5" fill="currentColor" />
+                  <circle cx="15" cy="16" r="1.5" fill="currentColor" />
+                  <circle cx="21" cy="10" r="1.5" fill="currentColor" />
+                </svg>
+              </div>
+              <h3>2. Monitorea en tiempo real</h3>
+              <p>
+                El dispositivo opera con una batería recargable, por lo que
+                puede funcionar de forma continua en zonas remotas. Además,
+                incorpora un módulo SIM800L, que le brinda conectividad
+                celular/satelital para enviar alertas incluso sin acceso a WiFi.
+                Cada evento o lectura detectada es transmitida a los servidores
+                de Econorte, donde se procesa y notifica automáticamente a los
+                usuarios y al equipo de monitoreo.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-image">
+              <img
+                src="/img/optimize.jpg?height=300&width=400"
+                alt="Automatización y control"
+              />
+            </div>
+            <div class="feature-content">
+              <div class="feature-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="3"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M12 1V3M12 21V23M4.22 4.22L5.64 5.64M18.36 18.36L19.78 19.78M1 12H3M21 12H23M4.22 19.78L5.64 18.36M18.36 5.64L19.78 4.22"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <h3>3. Optimiza y automatiza</h3>
+              <p>
+                Gracias a este sistema de vigilancia constante, se pueden
+                prevenir incendios, reducir su propagación y proteger
+                ecosistemas vulnerables. El monitoreo temprano permite actuar
+                antes de que el fuego crezca, evitando daños a la flora, fauna y
+                comunidades cercanas. Econorte contribuye así a un manejo
+                ambiental más inteligente, reduciendo el impacto ecológico y
+                promoviendo un entorno más seguro y sostenible.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LSM Arena Section -->
+    <section class="lsm-arena" id="lsm-arena">
+      <div class="container">
+        <div class="lsm-content">
+          <div class="lsm-text">
+            <span class="lsm-badge">Nuevo</span>
+            <!-- Added gaming icon -->
+            <div class="lsm-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="2"
+                  y="7"
+                  width="20"
+                  height="10"
+                  rx="2"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <circle cx="7" cy="12" r="1.5" fill="currentColor" />
+                <circle cx="11" cy="12" r="1.5" fill="currentColor" />
+                <path
+                  d="M16 10L16 14M14 12L18 12"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <h2 class="lsm-title">LSM Arena</h2>
+            <p class="lsm-description">
+              LSM Arena es un videojuego party game y educativo diseñado para
+              promover la inclusión de la comunidad sordo-muda mediante el uso
+              de la Lengua de Señas Mexicana (LSM) como forma principal de
+              interacción. El jugador utiliza su webcam para realizar señas que
+              el sistema reconoce y envía al servidor, donde un modelo
+              especializado evalúa la precisión del gesto y determina si la
+              acción dentro del juego es correcta. <br>
+              La experiencia combina diversión con aprendizaje: cada mini-juego
+              reta al jugador a realizar señas específicas, fortaleciendo su
+              memoria, velocidad y claridad al comunicarse en LSM. Esto
+              convierte a LSM Arena en una herramienta accesible tanto para
+              personas oyentes que desean aprender señas, como para personas
+              sordas que buscan un entorno lúdico que respete y valore su forma
+              de comunicación. <br>
+              Con un enfoque inclusivo, tecnológico y
+              educativo, LSM Arena demuestra cómo los videojuegos pueden ser
+              utilizados para derribar barreras de comunicación, fomentar la
+              participación y brindar una plataforma donde todos los jugadores
+              puedan competir, aprender y divertirse en igualdad de condiciones.
+            </p>
+            <p class="lsm-description">
+              Sumérgete en batallas épicas, desbloquea personajes únicos y
+              escala en el ranking global. La arena te espera.
+            </p>
+            <a href="lsm-arena.html" class="btn-game"
+              >Jugar ahora</a
+            >
+          </div>
+          <div class="lsm-image">
+            <img
+              src="/img/thumbnail.png?height=400&width=500"
+              alt="LSM Arena gameplay"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-column">
+            <h3 class="footer-logo">Econorte</h3>
+            <p class="footer-description">
+              Transformando la gestión empresarial con tecnología IoT
+              innovadora.
+            </p>
+          </div>
+
+          <div class="footer-column">
+            <h4>Producto</h4>
+            <ul>
+              <li><a href="#como-funciona">Cómo funciona</a></li>
+              <li><a href="/dashboard">Dashboard</a></li>
+              <li><a href="#nosotros">Nosotros</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Recursos</h4>
+            <ul>
+              <li><a href="#">Documentación</a></li>
+              <li><a href="#">Soporte</a></li>
+              <li><a href="#">API</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Juegos</h4>
+            <ul>
+              <li><a href="#">LSM Arena</a></li>
+              <li><a href="#">Rankings</a></li>
+              <li><a href="#">Torneos</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 Econorte. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
